@@ -1,2 +1,2 @@
 main :: IO ()
-main = someFunc
+main = putStrLn "Hello, World!"
