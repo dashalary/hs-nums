@@ -1,6 +1,6 @@
 import Data.List
 
-formatList :: String -> String -> String -> [String] -> String
+formatList :: String -> (String -> (String -> ([String] -> String)))
 formatList start end separator xs = start ++ (intercalate separator (map show xs)) ++ end
 
 main :: IO ()
